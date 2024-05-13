@@ -9,7 +9,9 @@ title = 'Less'
 paginate = 3
 
 [params]
-    author = 'arjnep'
+    author = true
+    authorName = 'arjnep'
+    authorLink = 'https://github.com/arjnep'
     archive = true
     tags = true
 
