@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div id="single_post_container" class="container">
+  <h1 class="single_post_title">{{ .Title }}</h1>
+  {{ $format := "Jan 2, 2006" }}
+  <div class="single_post_metadata">
+    <time datetime="{{ .PublishDate }}" class="date">{{ .Date.Format $format }}</time>
+    <span></span>
+    <span class="readingtime">{{ .ReadingTime }} min read</span>
+  </div>
+  <div class="single_post_content">
+    {{ .Content }}
+  </div>
+  </div>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

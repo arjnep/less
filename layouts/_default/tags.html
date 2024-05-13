@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div id="tags_container" class="container">
+    <h1 class="tags_title">{{ .Title }}</h1>
+    <div class='tags_list'>
+        {{range $name, $taxonomy := .Site.Taxonomies.tags}}
+        {{ $cnt := .Count }}
+        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                <a class="link" href="{{ .RelPermalink }}">{{$name}} <sup>{{$cnt}}</sup></a>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}

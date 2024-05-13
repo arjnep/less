@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <div id="archive_container" class="container">
+    <h1 class="archive_title">{{ .Title }}</h1>
+    <div class='archive_year_list'>
+    {{ range (.Site.RegularPages.GroupByDate "2006") }}
+    {{ $articles := (where .Pages "Section" "posts") }}
+    {{ $articles_count := len $articles }}
+    {{ if and (gt .Key 1) (gt $articles_count 0) }}
+    <div class='archive_post_list'>
+      {{ range $index, $value := (where .Pages "Section" "posts") }}
+      {{ if not $index }}
+          <h2>{{ .Date.Format "2006" }}</h2>
+      {{ end }}
+        <h1 class="post_title">
+          <i class='bx bxs-right-arrow'></i><a href="{{ .RelPermalink }}" class="link">{{ .LinkTitle }}</a>
+        </h1>
+    {{ end }}
+    </div> 
+    {{ end }}
+    {{ end }}
+  </div>
+  {{ end }}

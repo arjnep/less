@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div id="blog_container" class="container">
+  {{ $pages := ( where .Site.RegularPages "Section" "posts") }}
+  {{ $paginator := .Paginate ($pages) }}
+  {{ range $paginator.Pages }}
+    {{ $title := .Title }}
+  <div class="post">
+    {{ $format := "Jan 2, 2006" }}
+    <time datetime="{{ .PublishDate }}" class="post_date">{{ .Date.Format $format }}</time>
+    <h1 class="post_title">
+      <a href="{{ .RelPermalink }}" class="link">{{ $title }}</a>
+    </h1>
+  </div>
+  {{ end }}
+  
+    {{ if or ($paginator.HasPrev) ($paginator.HasNext) }}
+        <div class="blog_pagination">
+          {{ if $paginator.HasPrev }}
+              <span class="prev" title="Previous">
+                  <a href="{{.Paginator.Prev.URL}}">
+                    <i class='bx bxs-left-arrow-circle' ></i>
+                      {{ with .Site.Params.NewerPosts }}{{ . }}{{ end }}
+                  </a>
+            </span>
+          {{ end }}
+          
+          {{ if $paginator.HasNext }}
+              <span class="next" title="Next">
+                  <a href="{{.Paginator.Next.URL}}">
+                      {{ with .Site.Params.olderPosts }}{{ . }}{{ end }}
+                      <i class='bx bxs-right-arrow-circle' ></i>
+                  </a>
+              </span>
+          {{ end }}
+        </div>
+    {{ end }}
+</div>
+{{ end }}

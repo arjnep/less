@@ -1,0 +1,14 @@
+<footer>
+<div class="blog_author">
+    <a href="#">© <span class="name">{{ .Site.Params.Author }}</span> </a>
+    {{ partial "svgs/hyperlink.svg" }}
+  </div>
+  <div class="blog_subscribe">
+    {{ range $key, $val := .Site.Social }}
+    <a href="{{ $val }}" class="rss" target="_blank">
+      {{ $svg :=  print "svgs/" $key ".svg" }}
+      {{ partial $svg }}
+    </a>
+    {{ end }}
+  </div>
+</footer>

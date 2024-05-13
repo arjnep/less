@@ -1,0 +1,10 @@
+{{ $img := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $source := .Get "source" }}
+
+<picture>
+<img src="{{ $img }}" alt="{{ $alt }}">
+{{ if (ne $source "") }}
+<p class="img-source">Source: {{ $source }}</p>
+{{ end }}
+</picture>

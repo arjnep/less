@@ -1,0 +1,26 @@
+#Your hugo.toml file should look like this.
+
+baseURL = 'https://arjnep.github.io/less/' #Base URL of the site
+languageCode = 'en-us'
+title = 'My New Hugo Site' #Main Title of the site
+theme = 'less' #Theme Name
+
+paginate = 3 #No of posts, before a pagination.
+
+[params]
+    author = 'less' #author name to be in footer
+    archive = true #Whether to keep archive in header
+    tags = true #Whether to leep tags in header
+
+[social] #Github and Rss
+    github = 'https://github.com/arjnep'
+    rss = 'https://arjnep.github.io/less/index.xml'
+
+[taxonomies] #Only Taxonomy that is used
+  tag = 'tags'
+
+[markup]
+  [markup.highlight]
+    style = 'dracula' #Style of the syntax highlighter.
+
+

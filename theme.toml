@@ -1,0 +1,19 @@
+name = 'Less'
+licenselink = 'https://github.com/owner/repo/LICENSE'
+description = 'A theme with less but essential things only. Just a minimal theme.'
+
+homepage = 'https://github.com/arjnep/less'
+
+demosite = 'https://arjnep.github.io/less'
+
+tags = ['blog', 'minimal', 'less', 'essential', 'clean', 'style']
+features = ['dark mode', 'minimal', 'archive']
+
+[author]
+  name = 'Arjun Neupane'
+  homepage = 'https://www.arjunneupane.info.np'
+
+[original]
+  author = 'Arjun Neupane'
+  homepage = 'https://www.arjunneupane.info.np'
+  repo = 'https://github.com/arjnep/less'

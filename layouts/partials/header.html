@@ -1,0 +1,24 @@
+{{ if eq .Kind "home" }}
+<header>
+<h1 id="blog_title">
+    {{ .Site.Title }}
+  <span class="dot">⬤</span>
+</h1>
+<div class="blog_menus">
+  {{ if .Site.Params.archive }}
+    <a class="blog_archive link" href='{{ "archive" | absURL }}'>archive</a>
+  {{ end }}
+  {{ if .Site.Params.tags }}
+  <a class="blog_archive link" href='{{ "tags" | absURL }}'>tags</a>
+  {{ end }}
+  <div class="blog_theme">
+    <input type="checkbox" class="theme_checkbox" id="theme_checkbox" />
+    <label for="theme_checkbox" class="theme_checkbox-label">
+      <i class="bx bxs-moon"></i>
+      <i class="bx bxs-sun"></i>
+      <span class="ball"></span>
+    </label>
+  </div>
+</div>
+</header>
+{{ end }}

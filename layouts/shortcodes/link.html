@@ -1,0 +1,5 @@
+{{ $url := .Get "url" }}
+{{ $title := .Get "title" }}
+{{ $class := .Get "class" | default "link" }}
+
+<a href="{{ $url | safeURL }}" class="{{ $class }}">{{ $title }}</a>
