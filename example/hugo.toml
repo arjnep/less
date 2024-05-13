@@ -1,0 +1,27 @@
+baseURL = 'https://arjnep.github.io/less/'
+languageCode = 'en-us'
+title = 'Less'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/arjnep/less'
+
+paginate = 3
+
+[params]
+    author = 'arjnep'
+    archive = true
+    tags = true
+
+[social]
+    github = 'https://github.com/arjnep/less'
+    rss = 'https://arjnep.github.io/less/index.xml'
+
+[taxonomies]
+  tag = 'tags'
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+
+
