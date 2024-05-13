@@ -4,7 +4,7 @@ title = 'Less'
 
 [module]
   [[module.imports]]
-    path = 'github.com/arjnep/less'
+    path = "github.com/arjnep/less"
 
 paginate = 3
 
