@@ -1,8 +1,10 @@
 <footer>
-<div class="blog_author">
-    <a href="#">© <span class="name">{{ .Site.Params.Author }}</span> </a>
+  {{ if .Site.Params.author }}
+  <div class="blog_author">
+    <a href="{{ .Site.Params.authorLink }}" target="_blank">© <span class="name>
     {{ partial "svgs/hyperlink.svg" }}
   </div>
+  {{ end }}
   <div class="blog_subscribe">
     {{ range $key, $val := .Site.Social }}
     <a href="{{ $val }}" class="rss" target="_blank">

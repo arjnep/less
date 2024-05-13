@@ -8,7 +8,9 @@ theme = 'less' #Theme Name
 paginate = 3 #No of posts, before a pagination.
 
 [params]
-    author = 'less' #author name to be in footer
+    author = true #Whether to keep author in footer
+    authorName = 'arjnep' #Name of author if above true
+    authorLink = 'https://github.com/arjnep' #Link to author if above true
     archive = true #Whether to keep archive in header
     tags = true #Whether to leep tags in header
 
