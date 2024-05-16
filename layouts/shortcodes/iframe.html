@@ -1,0 +1,13 @@
+{{ $allowfullscreen := .Get "allowfullscreen" }}
+{{ $height := .Get "height" }}
+{{ $loading := .Get "loading" }}
+{{ $src := .Get "src" }}
+{{ $width := .Get "width" }}
+{{ $title := .Get "title" }}
+{{ $style := .Get "style" }}
+{{ $scrolling := .Get "scrolling" }}
+{{ $frameborder := .Get "frameborder" }}
+{{ $allowtransparency := .Get "allowtransparency" }}
+
+<iframe title='{{ $title }}' height='{{ $height }}' width={{ $width }} scrolling='{{ $scrolling }}' src="{{ $src }}" frameborder='{{ $frameborder }}' allowtransparency='{{ $allowtransparency }}' allowfullscreen='{{ $allowfullscreen }}' loading={{ $loading }} style='{{ $style }}'></iframe>
+

@@ -310,6 +310,13 @@ header .blog_menus {
   max-width: 100%;
 }
 
+#single_post_container .single_post_content iframe {
+	max-width: 100%;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+}
+
 #single_post_container .single_post_content .footnotes {
   font-size: calc(var(--content-font-big) - 15%);
   font-style: italic;

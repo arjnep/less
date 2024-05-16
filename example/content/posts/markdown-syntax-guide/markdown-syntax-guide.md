@@ -144,3 +144,11 @@ Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu c
 {{< /highlight >}}
 
 Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris official {{< link url="#" title="Lorem" class="link" >}} enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt.
+
+#### Adding an iframe
+
+{{< highlight html >}}
+  {{< iframe src="https://example.com/" width="640" height="480" frameborder="0" allowfullscreen="true" >}}
+{{< /highlight >}}
+
+Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris official {{< link url="#" title="Lorem" class="link" >}} enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt.
