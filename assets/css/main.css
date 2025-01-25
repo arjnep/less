@@ -25,8 +25,8 @@ a {
 }
 
 p, pre {
-  line-break: anywhere;
-  word-break: break-all;
+  line-break: normal;
+  word-break: normal;
 }
 
 body.light a,
