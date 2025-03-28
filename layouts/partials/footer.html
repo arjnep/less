@@ -6,7 +6,7 @@
   </div>
   {{ end }}
   <div class="blog_subscribe">
-    {{ range $key, $val := .Site.Social }}
+    {{ range $key, $val := .Site.Params.Social }}
     <a href="{{ $val }}" class="rss" target="_blank">
       {{ $svg :=  print "svgs/" $key ".svg" }}
       {{ partial $svg }}

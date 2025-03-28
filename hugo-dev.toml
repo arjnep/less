@@ -5,7 +5,8 @@ languageCode = 'en-us'
 title = 'My New Hugo Site' #Main Title of the site
 theme = 'less' #Theme Name
 
-paginate = 3 #No of posts, before a pagination.
+[pagination] #No of posts, before a pagination.
+    pagerSize = 3
 
 [params]
     author = true #Whether to keep author in footer
@@ -14,9 +15,9 @@ paginate = 3 #No of posts, before a pagination.
     archive = true #Whether to keep archive in header
     tags = true #Whether to leep tags in header
 
-[social] #Github and Rss
-    github = 'https://github.com/arjnep'
-    rss = 'https://arjnep.github.io/less/index.xml'
+    [params.social] #Github and Rss
+        github = 'https://github.com/arjnep'
+        rss = 'https://arjnep.github.io/less/index.xml'
 
 [taxonomies] #Only Taxonomy that is used
   tag = 'tags'
